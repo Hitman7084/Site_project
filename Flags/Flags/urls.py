@@ -23,5 +23,5 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    path('Countries/', include('Countries.urls')),
+    path('Countries/'),
 ]
