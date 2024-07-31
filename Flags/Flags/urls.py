@@ -25,3 +25,10 @@ urlpatterns = [
 urlpatterns += [
     path('Countries/', include('Countries.urls')),
 ]
+
+from django.views.generic import RedirectView
+urlpatterns += [
+    path('', RedirectView.as_view(url = 'Countries/',
+        permanent = True)),
+]
+
